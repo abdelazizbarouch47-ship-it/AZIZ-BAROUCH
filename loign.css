@@ -1,0 +1,106 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #01022ddd 35%, #000000aa),
+               url("download.webp") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* CARD */
+.form-card {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 40px 30px;
+    width: 370px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #000;
+    color: white;
+    text-align: center;
+    border: 1px solid #00ffff55;
+    backdrop-filter: blur(6px);
+}
+
+.form-card h2 {
+    font-size: 32px;
+    color: aqua;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: .8;
+    margin-bottom: 25px;
+}
+
+/* INPUTS */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form label {
+    margin: 8px 0 5px;
+    font-size: 15px;
+    color: #b8e6ff;
+}
+
+form input {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 12px;
+    background: #ffffffee;
+    font-size: 15px;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 8px;
+    padding: 12px;
+    background: aqua;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00d4d4;
+}
+
+/* BOTTOM TEXT */
+.login-text {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}

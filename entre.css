@@ -1,0 +1,95 @@
+/* إعدادات عامة */
+html{
+    background-image:linear-gradient(to right, #01022de5, #00000088),
+    url(NAM.jpg);
+    background-position: center;
+    width: 99%;
+    height: 750px;
+}
+body {
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+/* الهيدر */
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 2px 10px rgb(223, 243, 4);
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: 900;
+    color: rgb(7, 246, 99);
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+/* زر القائمة */
+.menu-icon {
+    font-size: 40px ;
+    color: palegreen;
+    cursor: context-menu;
+    display:flex;
+    left: 70px;
+
+}
+
+/* إخفاء checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* القائمة الجانبية */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    background:rgba(81, 88, 174, 0.707);
+    padding-top: 90px;
+    transition: 0.4s ease;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 12px 30px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #333;
+    padding-left: 40px;
+}
+
+/* عند تفعيل زر القائمة */
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
